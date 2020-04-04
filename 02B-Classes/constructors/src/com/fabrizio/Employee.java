@@ -14,6 +14,11 @@ public class Employee {
         return baseSalary + (getHourlyRate() * extraHours);
     }
 
+
+    public int calculateWage() {
+        return baseSalary;
+    }
+
     public void setBaseSalary(int baseSalary) {
         if (baseSalary <= 0)
             throw new IllegalAccessException("salary can not be less than zero");
