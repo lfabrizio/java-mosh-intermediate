@@ -4,6 +4,12 @@ public class Employee {
     public int baseSalary;
     private int hourlyRate;
 
+    public Employee(int baseSalary) {
+        setBaseSalary(baseSalary);
+        setHourlyRate(0);
+
+    }
+
     public Employee(int baseSalary, int hourlyRate) {
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
@@ -34,7 +40,7 @@ public class Employee {
     }
 
     public void setHourlyRate(int hourlyRate) {
-        if (hourlyRate <= 0)
+        if (hourlyRate < 0)
             throw new IllegalAccessException("error");
         this.hourlyRate = hourlyRate;
     }
