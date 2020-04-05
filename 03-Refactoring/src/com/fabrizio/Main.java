@@ -1,9 +1,8 @@
 package com.fabrizio;
 
-
 import java.text.NumberFormat;
 import java.util.Scanner;
-
+// movin g static fields
 public class Main {
 
     public static void main(String[] args) {
