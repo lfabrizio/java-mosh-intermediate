@@ -8,6 +8,7 @@ public class Console {
     public static double readNumber(String prompt) {
         return scanner.nextDouble();
     }
+
     public static double readNumber(String prompt, double min, double max) {
         double value;
         while (true) {
@@ -15,9 +16,8 @@ public class Console {
             value = scanner.nextDouble();
             if (value >= min && value <= max)
                 break;
-            System.out.println("Enter a value between " + min + " and " + max);
+            System.out.println("Enter a number between " + min + " and " + max);
         }
-
         return value;
     }
 }
