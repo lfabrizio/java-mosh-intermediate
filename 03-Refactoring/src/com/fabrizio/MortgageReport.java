@@ -1,5 +1,5 @@
 package com.fabrizio;
-
+// no calculations, just presentation.
 import java.text.NumberFormat;
 
 public class MortgageReport {
