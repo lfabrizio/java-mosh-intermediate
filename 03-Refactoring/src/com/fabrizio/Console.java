@@ -1,5 +1,5 @@
 package com.fabrizio;
-
+// console reads
 import java.util.Scanner;
 
 public class Console {
