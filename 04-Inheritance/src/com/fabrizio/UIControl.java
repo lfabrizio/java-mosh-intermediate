@@ -3,6 +3,11 @@ package com.fabrizio;
 public class UIControl {
     private boolean isEnabled = true;
 
+    public UIControl(boolean isEnabled) {
+        this.isEnabled= isEnabled;
+        System.out.println("Ui Control");
+    }
+
     public void enable(){
         isEnabled = true;
     }
