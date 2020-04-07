@@ -1,9 +1,10 @@
 package com.fabrizio;
 
 public class Main {
-    // referencing  same object on memory
+    // access modifiers
     public static void main(String[] args) {
 	var textBox = new TextBox();
+	new UIControl(true);
 
 
     }
