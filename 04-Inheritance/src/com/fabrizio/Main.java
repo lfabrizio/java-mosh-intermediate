@@ -9,10 +9,8 @@ public class Main {
 
     }
     public static void show(UIControl control){
-        if (control instanceof TextBox) {
-            var textBox = (TextBox) control;
-            textBox.setText("Hello world");
-        }
-        System.out.println(control);
+        var point1 = new Point(1, 2);
+        var point2 = new Point(1, 2);
+        System.out.println(point1 == point2);
     }
 }
