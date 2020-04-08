@@ -1,5 +1,8 @@
 package com.fabrizio;
 
+import javax.naming.spi.ObjectFactoryBuilder;
+import java.util.Objects;
+
 public class Point {
     private int x;
     private int y;
@@ -10,7 +13,14 @@ public class Point {
     }
     @Override
     public boolean equals(Object obj){
-        var other = (Point)obj;
-        return other.x == x && other.y == y;
+        if (this == obj)
+            return true;
+
+              var other = (Point) obj;
+              return other.x == x && other.y == y;
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
     }
 }

@@ -11,6 +11,7 @@ public class Main {
     public static void show(UIControl control){
         var point1 = new Point(1, 2);
         var point2 = new Point(1, 2);
-        System.out.println(point1 == point2);
+        System.out.println(point1.hashCode());
+        System.out.println(point2.hashCode());
     }
 }
