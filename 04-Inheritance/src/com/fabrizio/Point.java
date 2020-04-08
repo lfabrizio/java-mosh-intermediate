@@ -10,6 +10,7 @@ public class Point {
     }
     @Override
     public boolean equals(Object obj){
-        return super.equals(obj);
+        var other = (Point)obj;
+        return other.x == x && other.y == y;
     }
 }
