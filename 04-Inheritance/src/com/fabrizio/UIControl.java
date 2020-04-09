@@ -1,15 +1,13 @@
 package com.fabrizio;
 
-public class UIControl {
+public abstract class UIControl {
     protected boolean isEnabled = true;
 //
 //    public UIControl(boolean isEnabled) {
 //        this.isEnabled= isEnabled;
 //    }
 
-    public void render() {
-
-    }
+    public abstract void render();
 
     public void enable(){
         isEnabled = true;
