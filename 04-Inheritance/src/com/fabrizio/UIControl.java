@@ -2,10 +2,13 @@ package com.fabrizio;
 
 public class UIControl {
     protected boolean isEnabled = true;
+//
+//    public UIControl(boolean isEnabled) {
+//        this.isEnabled= isEnabled;
+//    }
 
-    public UIControl(boolean isEnabled) {
-        this.isEnabled= isEnabled;
-        System.out.println("Ui Control");
+    public void render() {
+
     }
 
     public void enable(){
