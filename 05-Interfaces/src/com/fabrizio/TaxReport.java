@@ -1,6 +1,8 @@
 package com.fabrizio;
 
 public class TaxReport {
+
+
     private TaxCalculator calculator;
 
     public TaxReport(TaxCalculator calculator) {
@@ -10,5 +12,9 @@ public class TaxReport {
     public void show(){
         var tax = calculator.calculateTax();
         System.out.println(tax);
+    }
+
+    public void setCalculator(TaxCalculator calculator) {
+        this.calculator = calculator;
     }
 }
