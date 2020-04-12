@@ -1,7 +1,5 @@
 package com.fabrizio;
 
-import static org.graalvm.compiler.options.OptionType.User;
-
 public class Main {
 
     public static void main(String[] args) {
