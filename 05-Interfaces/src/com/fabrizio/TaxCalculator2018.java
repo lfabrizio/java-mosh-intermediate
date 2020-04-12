@@ -8,7 +8,7 @@ public class TaxCalculator2018 extends AbstractTaxCalculator {
     }
      @Override
     public double calculateTax(){
-        getTaxableIncome()
+//        getTaxableIncome();
         return taxableIncome * 0.3;
     }
 }
